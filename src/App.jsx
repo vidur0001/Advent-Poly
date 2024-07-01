@@ -13,12 +13,13 @@ const App = () => {
       <title>Advent Poly PVT. LTD</title>
       <Router>
         <Routes>
-          <Route exact path='/' element={<Home/>}></Route>
-          <Route exact path='/aboutus' element={<Aboutus/>}></Route>
-          <Route exact path='/products' element={<Products/>}></Route>
-          <Route exact path='/contactus' element={<Contactus/>}></Route>
-          <Route exact path='/consultancy' element={<Consultancy/>}></Route>
-          <Route exact path='/login' element={<LoginForm/>}></Route>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/aboutus' element={<Aboutus/>}></Route>
+          <Route path='/products' element={<Products/>}></Route>
+          <Route path='/contactus' element={<Contactus/>}></Route>
+          <Route path='/consultancy' element={<Consultancy/>}></Route>
+          <Route path='/login' element={<LoginForm/>}></Route>
+          <Route path='/*' element= {<></>}></Route> {/* TODO:- Not Found page*/}
         </Routes>
         <Footer/>
       </Router>

@@ -5,6 +5,7 @@ const LoginForm = () => {
   const [isRegistered, setIsRegistered] = useState(true);
 
   return (
+    <div style={{ width: '100%', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
     <div className="login-form-container">
       <div className="form-toggle">
         <button className={isRegistered ? 'active' : ''} onClick={() => setIsRegistered(true)}>Login</button>
@@ -47,6 +48,7 @@ const LoginForm = () => {
           </form>
         </div>
       )}
+    </div>
     </div>
   );
 };
