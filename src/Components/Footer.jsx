@@ -1,6 +1,7 @@
 // Footer.jsx
 
 // import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -10,18 +11,18 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Navigation</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/aboutus">About</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/contactus">Contact</a></li>
-            <li><a href="/consultancy">Consultancy</a></li>
-            <li><a href="/login">Login</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/aboutus">About</Link></li>
+            <li><Link to="/products">Products</Link></li>
+            <li><Link to="/contactus">Contact</Link></li>
+            <li><Link to="/consultancy">Consultancy</Link></li>
+            <li><Link to="/login">Login</Link></li>
           </ul>
         </div>
         <div className="footer-section">
           <h3>Privacy Policy</h3>
           <ul>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
           </ul>
         </div>
         <div className="footer-section">
